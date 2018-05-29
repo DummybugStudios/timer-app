@@ -6,8 +6,8 @@ class MVMainView: NSView {
     super.init(frame: frameRect)
     
     let nc = NotificationCenter.default
-    nc.addObserver(self, selector: #selector(windowFocusChanged), name: NSNotification.Name.NSWindowDidBecomeKey, object: nil)
-    nc.addObserver(self, selector: #selector(windowFocusChanged), name: NSNotification.Name.NSWindowDidResignKey, object: nil)
+    nc.addObserver(self, selector: #selector(windowFocusChanged), name: NSWindow.didBecomeKeyNotification, object: nil)
+    nc.addObserver(self, selector: #selector(windowFocusChanged), name: NSWindow.didResignKeyNotification, object: nil)
   }
   
   required init?(coder: NSCoder) {
@@ -36,7 +36,7 @@ class MVMainView: NSView {
     gradient?.draw(in: path, angle: -90)
   }
   
-  func windowFocusChanged(_ notification: Notification) {
+  @objc func windowFocusChanged(_ notification: Notification) {
     self.needsDisplay = true
   }
   

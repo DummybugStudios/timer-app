@@ -53,7 +53,9 @@
 				4C30BBFA1CA7C56500C45EBF /* Timer */,
 				4C30BBF91CA7C56500C45EBF /* Products */,
 			);
+			indentWidth = 2;
 			sourceTree = "<group>";
+			tabWidth = 2;
 		};
 		4C30BBF91CA7C56500C45EBF /* Products */ = {
 			isa = PBXGroup;
@@ -115,7 +117,7 @@
 					4C30BBF71CA7C56500C45EBF = {
 						CreatedOnToolsVersion = 7.3;
 						DevelopmentTeam = D9K5AX3444;
-						LastSwiftMigration = 0820;
+						LastSwiftMigration = 0920;
 					};
 				};
 			};
@@ -293,7 +295,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.michaelvillar.Timer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -311,7 +314,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.michaelvillar.Timer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
